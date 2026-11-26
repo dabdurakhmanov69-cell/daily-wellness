@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Wellness 🌿</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>My Daily Wellness 🌿</h1>
+        <p>A little progress every day makes a beautiful life.</p>
+    </header>
+
+    <nav class="navigation">
+        <a href="#checklist">Daily Checklist</a>
+        <a href="#movement">Movement & Hobbies</a>
+        <a href="#habits">Habit Tracker</a>
+        <a href="#study">Study Planner</a>
+    </nav>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome to your peaceful space 🍃</h2>
+            <p>Plan your day, build healthy habits, and make time for yourself.</p>
+        </section>
+
+        <section class="dashboard">
+            <a href="#checklist" class="card">
+                <h2>🌱 Daily Checklist</h2>
+                <p>Organize your everyday tasks.</p>
+            </a>
+
+            <a href="#movement" class="card">
+                <h2>🌿 Movement & Hobbies</h2>
+                <p>Make time for activities you enjoy.</p>
+            </a>
+
+            <a href="#habits" class="card">
+                <h2>🍃 Habit Tracker</h2>
+                <p>Keep track of your daily habits.</p>
+            </a>
+
+            <a href="#study" class="card">
+                <h2>📚 Study Planner</h2>
+                <p>Organize your learning time.</p>
+            </a>
+        </section>
+
+        <section id="checklist" class="card">
+            <h2>🌱 My Daily Checklist</h2>
+            <p>Small steps make a beautiful day.</p>
+
+            <div class="task"><input type="checkbox"><label>Make my bed</label></div>
+            <div class="task"><input type="checkbox"><label>Organize my day</label></div>
+            <div class="task"><input type="checkbox"><label>Read something interesting</label></div>
+            <div class="task"><input type="checkbox"><label>Spend time on a hobby</label></div>
+            <div class="task"><input type="checkbox"><label>Prepare for tomorrow</label></div>
+        </section>
+
+        <section id="movement" class="card">
+            <h2>🌿 Movement & Hobbies</h2>
+            <p>Make a little time for the things you enjoy.</p>
+
+            <div class="task"><input type="checkbox"><label>Go for a relaxing walk</label></div>
+            <div class="task"><input type="checkbox"><label>Listen to music</label></div>
+            <div class="task"><input type="checkbox"><label>Draw, paint, or create something</label></div>
+            <div class="task"><input type="checkbox"><label>Spend time on a favorite hobby</label></div>
+        </section>
+
+        <section id="habits" class="card">
+            <h2>🍃 My Habit Tracker</h2>
+            <p>Little habits can make your days feel more organized.</p>
+
+            <div class="task"><input type="checkbox"><label>Drink enough water</label></div>
+            <div class="task"><input type="checkbox"><label>Read for a little while</label></div>
+            <div class="task"><input type="checkbox"><label>Keep my space tidy</label></div>
+            <div class="task"><input type="checkbox"><label>Take a break when I need one</label></div>
+        </section>
+
+        <section id="study" class="card">
+            <h2>📚 My Study Planner</h2>
+            <p>Keep your learning tasks organized.</p>
+
+            <div class="task"><input type="checkbox"><label>Review today's lessons</label></div>
+            <div class="task"><input type="checkbox"><label>Complete my homework</label></div>
+            <div class="task"><input type="checkbox"><label>Prepare for upcoming tests</label></div>
+            <div class="task"><input type="checkbox"><label>Organize my study materials</label></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Grow at your own pace. ♡</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
