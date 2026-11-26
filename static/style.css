@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f3f6ed;
+    color: #405342;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    padding: 45px 20px;
+    background: #dce8d5;
+    border-radius: 22px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 38px;
+    color: #45634b;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #71816c;
+    font-size: 17px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.welcome {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.welcome h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    color: #71816c;
+    line-height: 1.6;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(70, 95, 65, 0.08);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: #54765a;
+    margin-bottom: 14px;
+    font-size: 21px;
+}
+
+.card p {
+    color: #7d8977;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 10px 15px;
+    color: #82927b;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 29px;
+    }
+}
+
+a.card {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+#checklist, #movement, #habits, #study {
+    margin-top: 25px;
+    scroll-margin-top: 25px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+    color: #54765a;
+    font-size: 16px;
+}
+
+.task input {
+    width: 18px;
+    height: 18px;
+    accent-color: #6d9873;
+    cursor: pointer;
+}
+
+.task label {
+    cursor: pointer;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #54765a;
+    background: #e2ebdc;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.navigation a:hover {
+    background: #54765a;
+    color: white;
+}
